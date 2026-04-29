@@ -1,0 +1,85 @@
+body {
+    font-family: sans-serif;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.filtros {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.filtros button {
+    padding: 6px 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    background: white;
+}
+
+.filtros button.activo {
+    background: #1a1a1a;
+    color: white;
+    border-color: #1a1a1a;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.tarjeta {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.tarjeta h3 {
+    margin: 0 0 6px;
+    font-size: 15px;
+}
+
+.tarjeta h3::first-letter {
+    text-transform: capitalize;
+}
+
+.tarjeta .precio {
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+.tarjeta .categoria {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.tarjeta.agotado {
+    opacity: 0.45;
+}
+
+.badge {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    background: #f0f0f0;
+}
+
+.quitar {
+    box-sizing: border-box;
+    height: 24px;
+    width: 24px;
+    font-weight: bolder;
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    justify-self: end;
+
+    border: 1px solid #888;
+    border-radius: 100%;
+}

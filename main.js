@@ -1,5 +1,5 @@
 import { platillos, CATEGORIAS_VALIDAS } from "./data/platillos.js";
-import Platillo from "./models/Platillo.js";
+import Platillo from "./models/platillo.js";
 import { guardarPlatillo, obtenerPlatillos } from "./services/storage.js";
 import {
   renderizarOpcionesCategoria,

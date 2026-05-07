@@ -77,9 +77,11 @@ body {
 
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     justify-self: end;
 
     border: 1px solid #888;
     border-radius: 100%;
+
+    cursor: pointer;
 }
